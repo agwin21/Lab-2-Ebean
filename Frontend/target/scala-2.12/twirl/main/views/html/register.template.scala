@@ -25,81 +25,61 @@ import play.core.j.PlayFormsMagicForJava._
 object register extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(authorizeMessage: String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(message: String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
 Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Play Setup Demo</title>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+            .button """),format.raw/*6.21*/("""{"""),format.raw/*6.22*/("""
+                """),format.raw/*7.17*/("""background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            """),format.raw/*17.13*/("""}"""),format.raw/*17.14*/("""
+    """),format.raw/*18.5*/("""</style>
 
-            <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-    </head>
     <body>
 
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Play Setup Demo</strong>
+                Query 1.1 Paper Search
             </h1>
+
         </header>
 
+        <div>
+            <p class="focused" style="font-size: 20px;
+                color: #3F51B5">
+                """),_display_(/*33.18*/message),format.raw/*33.25*/("""
+            """),format.raw/*34.13*/("""</p>
 
-        <div class="row">
-            <div class="card col s4 offset-s4 ">
-                <div class="card-panel">
-                    <form action=""""),_display_(/*31.36*/routes/*31.42*/.HomeController.signupHandler()),format.raw/*31.73*/("""" method="GET">
-
-                        <div class="row">
-                            <div class="input-field col s12">
-
-                                <input id="username" name="username" type="text" class="validate">
-                                <label for="username">Username</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-
-                                <input id="password" name="password" type="password" class="validate">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
-                        """),_display_(/*47.26*/if(authorizeMessage!= null)/*47.53*/{_display_(Seq[Any](format.raw/*47.54*/("""
-                            """),format.raw/*48.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*49.30*/authorizeMessage),format.raw/*49.46*/("""
-                            """),format.raw/*50.29*/("""</div>
-                            <br>
-                        """)))}),format.raw/*52.26*/("""
-
-                        """),format.raw/*54.25*/("""<div class="row">
-                            <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
         </div>
+
+        <form action = """"),_display_(/*38.26*/routes/*38.32*/.HomeController.q11Handler()),format.raw/*38.60*/("""" method="GET">
+            <label>Paper title</label>
+            <input type = "text" maxlength="100" id="title" name="title">
+            <button id="api-get-page"  class="button" type="submit">1.1 Paper Search</button>
+        </form>
     </body>
-</html>
-"""))
+</html>"""))
       }
     }
   }
 
-  def render(authorizeMessage:String): play.twirl.api.HtmlFormat.Appendable = apply(authorizeMessage)
+  def render(message:String): play.twirl.api.HtmlFormat.Appendable = apply(message)
 
-  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (authorizeMessage) => apply(authorizeMessage)
+  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (message) => apply(message)
 
   def ref: this.type = this
 
@@ -108,11 +88,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-09-24T11:30:27.787
+                  DATE: 2021-10-05T16:03:38.933
                   SOURCE: /Users/abbygwin/Downloads/Lab-2-Ebean/Frontend/app/views/register.scala.html
-                  HASH: 21084405952337d1dab47a06d6b9e9c7674f3466
-                  MATRIX: 951->1|1071->28|2659->1591|2674->1597|2726->1628|3481->2356|3517->2383|3556->2384|3613->2413|3716->2489|3753->2505|3810->2534|3906->2599|3960->2625
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|85->54
+                  HASH: 09e7bcc188408f39192bc05862ccf1cb9de19382
+                  MATRIX: 951->1|1062->19|1145->75|1173->76|1217->93|1605->453|1634->454|1666->459|2032->798|2060->805|2101->818|2175->865|2190->871|2239->899
+                  LINES: 28->1|33->2|37->6|37->6|38->7|48->17|48->17|49->18|64->33|64->33|65->34|69->38|69->38|69->38
                   -- GENERATED --
               */
           

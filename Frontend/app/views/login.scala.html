@@ -1,6 +1,38 @@
 @(authorizeMessage: String)
 <!DOCTYPE html>
 <html>
+
+    <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color: #2196F3;
+                padding: 10px;
+            }
+
+            .grid-item {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding: 5px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+    </style>
+
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,42 +52,53 @@
         <header class="topbar">
             <h1 class="focused" style="font-size: 37px;
                 color: #57a957">
-                <strong>Play Setup Demo</strong>
+                <strong>Part 1 Queries</strong>
             </h1>
         </header>
 
 
-        <div class="row">
-            <div class="card col s4 offset-s4 ">
-                <div class="card-panel">
-                    <form action="@routes.HomeController.loginHandler()" method="GET">
+        <div class="grid-container">
+            <div class="grid-item">
+                <form action = "@routes.HomeController.query11()" method="GET">
+                    <button id="api-get-page"  class="button" type="submit">1.1 Paper Search</button>
+                </form>
 
-                        <div class="row">
-                            <div class="input-field col s12">
+            </div>
 
-                                <input id="username" name="username" type="text" class="validate">
-                                <label for="username">Username</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
+            <div class="grid-item">
+                <button id="api-get-page" class="button" type="query12">1.2 Journal Search</button>
+            </div>
+            <div class="grid-item">
+                <button id="api-get-page" class="button" type="query13">1.3 Author Title Search</button>
+            </div>
+            <div class="grid-item">
+                <button id="api-get-page" class="button" type="query14">1.4 Authors With 10+ Papers</button>
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item">
+                <button id="api-get-page" class="button" type="query15">1.5 Conference Location Search</button>
+            </div>
+        </div>
 
-                                <input id="password" name="password" type="password" class="validate">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
-                        @if(authorizeMessage!= null){
-                            <div class="alert alert-primary" role="alert">
-                            @authorizeMessage
-                            </div>
-                            <br>
-                        }
-                        <div class="row">
-                            <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
-                        </div>
-                        <a href="@routes.HomeController.signup()">REGISTER</a>
-                    </form>
-                </div>
+
+        <header class="topbar">
+            <h1 class="focused" style="font-size: 37px;
+                color: #57a957">
+                <strong>Part 2 Queries</strong>
+            </h1>
+        </header>
+
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <button id="api-get-page" class="button" type="query21">2.1 Author Paper Search</button>
+            </div>
+
+            <div class="grid-item">
+                <button id="api-get-page" class="button" type="query12">2.2 Productive Authors Co-Authors</button>
+            </div>
+            <div class="grid-item">
+                <button id="api-get-page" class="button" type="query13">2.3 Map of Conference Locations</button>
             </div>
         </div>
     </body>

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/abbygwin/Downloads/Lab-2-Ebean/ebean-backend/conf/routes
-// @DATE:Tue Oct 05 14:10:23 CDT 2021
+// @DATE:Tue Oct 05 16:01:30 CDT 2021
 
 package router
 
@@ -18,8 +18,8 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   HomeController_0: controllers.HomeController,
-  // @LINE:9
-  UserController_1: controllers.UserController,
+  // @LINE:8
+  PaperController_1: controllers.PaperController,
   val prefix: String
 ) extends GeneratedRouter {
 
@@ -27,15 +27,15 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     HomeController_0: controllers.HomeController,
-    // @LINE:9
-    UserController_1: controllers.UserController
-  ) = this(errorHandler, HomeController_0, UserController_1, "/")
+    // @LINE:8
+    PaperController_1: controllers.PaperController
+  ) = this(errorHandler, HomeController_0, PaperController_1, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_0, UserController_1, prefix)
+    new Routes(errorHandler, HomeController_0, PaperController_1, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -44,8 +44,7 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.UserController.authenticate()"""),
-    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """signup""", """controllers.UserController.registerNew()"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """paper""", """controllers.PaperController.paperSearch()"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -70,37 +69,20 @@ class Routes(
     )
   )
 
-  // @LINE:9
-  private[this] lazy val controllers_UserController_authenticate1_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
+  // @LINE:8
+  private[this] lazy val controllers_PaperController_paperSearch1_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("paper")))
   )
-  private[this] lazy val controllers_UserController_authenticate1_invoker = createInvoker(
-    UserController_1.authenticate(),
+  private[this] lazy val controllers_PaperController_paperSearch1_invoker = createInvoker(
+    PaperController_1.paperSearch(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.UserController",
-      "authenticate",
+      "controllers.PaperController",
+      "paperSearch",
       Nil,
       "POST",
-      """Login""",
-      this.prefix + """login"""
-    )
-  )
-
-  // @LINE:13
-  private[this] lazy val controllers_UserController_registerNew2_route = Route("POST",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("signup")))
-  )
-  private[this] lazy val controllers_UserController_registerNew2_invoker = createInvoker(
-    UserController_1.registerNew(),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.UserController",
-      "registerNew",
-      Nil,
-      "POST",
-      """ Add User  {"name":name, "password":password}""",
-      this.prefix + """signup"""
+      """""",
+      this.prefix + """paper"""
     )
   )
 
@@ -113,16 +95,10 @@ class Routes(
         controllers_HomeController_index0_invoker.call(HomeController_0.index)
       }
   
-    // @LINE:9
-    case controllers_UserController_authenticate1_route(params) =>
+    // @LINE:8
+    case controllers_PaperController_paperSearch1_route(params) =>
       call { 
-        controllers_UserController_authenticate1_invoker.call(UserController_1.authenticate())
-      }
-  
-    // @LINE:13
-    case controllers_UserController_registerNew2_route(params) =>
-      call { 
-        controllers_UserController_registerNew2_invoker.call(UserController_1.registerNew())
+        controllers_PaperController_paperSearch1_invoker.call(PaperController_1.paperSearch())
       }
   }
 }
