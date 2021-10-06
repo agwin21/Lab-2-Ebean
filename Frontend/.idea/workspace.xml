@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccedc1b1-c9f3-4b33-8019-4ffbf616e5f1" name="Default Changelist" comment="Changes done to support multi keyword search">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/Paper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ebean-backend/app/models/Papers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ebean-backend/test/controllers/ReverseUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/login.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/register.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/register.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/app/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/app/controllers/PaperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/app/models/Authors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/conf/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/conf/evolutions/default/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/conf/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/ReverseHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/ReverseUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/javascript/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/javascript/ReverseHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/javascript/ReverseUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/routes$javascript.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/routes$javascript.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/controllers/routes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/evolutions/default/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/evolutions/default/1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/models/User$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$documentation$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_HomeController_index0_invoker$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_HomeController_index0_invoker$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_UserController_authenticate1_invoker$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$router$Routes$$controllers_UserController_registerNew2_invoker$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1$$anonfun$apply$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1$$anonfun$applyOrElse$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/router/Routes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/classes/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/controllers/routes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/router/Routes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/scala-2.11/routes/main/router/RoutesPrefix.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.11/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/playEnhancerGenerateAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/playEnhancerRewriteAccessors/$global/streams/play_instrumentation_2.11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ebean-backend/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
-    </list>
+    <list default="true" id="ccedc1b1-c9f3-4b33-8019-4ffbf616e5f1" name="Default Changelist" comment="edited everything i could find.... might be missing aspects(compiles and runs but its not... good.)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -261,7 +211,7 @@
       <workItem from="1632970651161" duration="10000" />
       <workItem from="1633104297625" duration="77000" />
       <workItem from="1633460519098" duration="599000" />
-      <workItem from="1633467404487" duration="330000" />
+      <workItem from="1633467404487" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit Advance requirement 4,5">
       <created>1573100508310</created>
@@ -277,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573161166977</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="edited everything i could find.... might be missing aspects(compiles and runs but its not... good.)">
+      <created>1633467939290</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633467939290</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +255,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit Advance requirement 4,5" />
     <MESSAGE value="Changes done to support multi keyword search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes done to support multi keyword search" />
+    <MESSAGE value="edited everything i could find.... might be missing aspects(compiles and runs but its not... good.)" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited everything i could find.... might be missing aspects(compiles and runs but its not... good.)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -347,6 +305,11 @@
           <url>file://$PROJECT_DIR$/app/controllers/HomeController.java</url>
           <line>52</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/login.template.scala</url>
+          <line>29</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
