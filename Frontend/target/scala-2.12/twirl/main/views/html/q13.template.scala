@@ -32,46 +32,28 @@ object q13 extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFo
 
 Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
-
-    <style>
-            .button """),format.raw/*6.21*/("""{"""),format.raw/*6.22*/("""
-                """),format.raw/*7.17*/("""background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            """),format.raw/*17.13*/("""}"""),format.raw/*17.14*/("""
-    """),format.raw/*18.5*/("""</style>
-
     <body>
 
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
+            <h1>
                 Query 1.3 Researcher Search
             </h1>
 
         </header>
 
         <div>
-            <p class="focused" style="font-size: 20px;
-                color: #3F51B5">
-                """),_display_(/*33.18*/message),format.raw/*33.25*/("""
-            """),format.raw/*34.13*/("""</p>
+            <p>
+                """),_display_(/*15.18*/message),format.raw/*15.25*/("""
+            """),format.raw/*16.13*/("""</p>
 
         </div>
 
-        <form action = """"),_display_(/*38.26*/routes/*38.32*/.HomeController.q13Handler()),format.raw/*38.60*/("""" method="GET">
+        <form action = """"),_display_(/*20.26*/routes/*20.32*/.HomeController.q13Handler()),format.raw/*20.60*/("""" method="GET">
             <label>Researcher Name</label>
             <input type = "text" maxlength="100" id="researcher" name="researcher">
             <label>Year</label>
             <input type = "text" maxlength="100" id="year" name="year">
-            <button id="api-get-page"  class="button" type="submit">1.3 Researcher Search</button>
+            <button id="api-get-page"  class="btn btn-primary" type="submit">1.3 Researcher Search</button>
         </form>
     </body>
 </html>"""))
@@ -90,11 +72,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-10-06T21:08:11.277
-                  SOURCE: /Users/abbygwin/CS_7340_Lab2/Frontend/app/views/q13.scala.html
-                  HASH: 46dec5560bd956c7da4e6b567467cc05016c6f7b
-                  MATRIX: 946->1|1057->19|1140->75|1168->76|1212->93|1600->453|1629->454|1661->459|2032->803|2060->810|2101->823|2175->870|2190->876|2239->904
-                  LINES: 28->1|33->2|37->6|37->6|38->7|48->17|48->17|49->18|64->33|64->33|65->34|69->38|69->38|69->38
+                  DATE: 2021-10-06T23:23:52.380
+                  SOURCE: /Users/adam/Desktop/Lab-2-Ebean/Frontend/app/views/q13.scala.html
+                  HASH: 919fced21db7977d66d8dc08af4755edf204ed01
+                  MATRIX: 946->1|1057->19|1297->232|1325->239|1366->252|1440->299|1455->305|1504->333
+                  LINES: 28->1|33->2|46->15|46->15|47->16|51->20|51->20|51->20
                   -- GENERATED --
               */
           

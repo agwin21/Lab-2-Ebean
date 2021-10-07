@@ -33,43 +33,26 @@ object q11 extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFo
 Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
 
-    <style>
-        .button """),format.raw/*6.17*/("""{"""),format.raw/*6.18*/("""
-            """),format.raw/*7.13*/("""background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        """),format.raw/*17.9*/("""}"""),format.raw/*17.10*/("""
-    """),format.raw/*18.5*/("""</style>
-
     <body>
 
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
+            <h1>
                 Query 1.1 Paper Search
             </h1>
 
         </header>
 
         <div>
-            <p class="focused" style="font-size: 20px;
-            color: #3F51B5">
-                """),_display_(/*33.18*/message),format.raw/*33.25*/("""
-            """),format.raw/*34.13*/("""</p>
+            <p>
+                """),_display_(/*16.18*/message),format.raw/*16.25*/("""
+            """),format.raw/*17.13*/("""</p>
 
         </div>
 
-        <form action = """"),_display_(/*38.26*/routes/*38.32*/.HomeController.q11Handler()),format.raw/*38.60*/("""" method="GET">
-            <label>Paper title</label>
+        <form action = """"),_display_(/*21.26*/routes/*21.32*/.HomeController.q11Handler()),format.raw/*21.60*/("""" method="GET">
+            <label>Paper Name</label>
             <input type = "text" maxlength="100" id="title" name="title">
-            <button id="api-get-page"  class="button" type="submit">1.1 Paper Search</button>
+            <button id="api-get-page"  class="btn btn-primary" type="submit">1.1 Paper Search</button>
         </form>
     </body>
 </html>"""))
@@ -88,11 +71,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-10-06T21:08:11.241
-                  SOURCE: /Users/abbygwin/CS_7340_Lab2/Frontend/app/views/q11.scala.html
-                  HASH: 1dd2ecbcfb162ceaa00108c10d970928561b2986
-                  MATRIX: 946->1|1057->19|1136->71|1164->72|1204->85|1551->405|1580->406|1612->411|1974->746|2002->753|2043->766|2117->813|2132->819|2181->847
-                  LINES: 28->1|33->2|37->6|37->6|38->7|48->17|48->17|49->18|64->33|64->33|65->34|69->38|69->38|69->38
+                  DATE: 2021-10-06T23:26:29.089
+                  SOURCE: /Users/adam/Desktop/Lab-2-Ebean/Frontend/app/views/q11.scala.html
+                  HASH: d57d2cea5e7dca23f8f60b0b7f325ff5147003b4
+                  MATRIX: 946->1|1057->19|1293->228|1321->235|1362->248|1436->295|1451->301|1500->329
+                  LINES: 28->1|33->2|47->16|47->16|48->17|52->21|52->21|52->21
                   -- GENERATED --
               */
           

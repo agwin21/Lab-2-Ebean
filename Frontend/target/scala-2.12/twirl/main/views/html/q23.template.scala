@@ -43,53 +43,39 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
     crossorigin=""></script>
 
     <style>
-            .button """),format.raw/*15.21*/("""{"""),format.raw/*15.22*/("""
-                """),format.raw/*16.17*/("""background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            """),format.raw/*26.13*/("""}"""),format.raw/*26.14*/("""
 
-            """),format.raw/*28.13*/("""#mapid """),format.raw/*28.20*/("""{"""),format.raw/*28.21*/(""" """),format.raw/*28.22*/("""height: 600px; """),format.raw/*28.37*/("""}"""),format.raw/*28.38*/("""
-    """),format.raw/*29.5*/("""</style>
+            #mapid """),format.raw/*16.20*/("""{"""),format.raw/*16.21*/(""" """),format.raw/*16.22*/("""height: 600px; """),format.raw/*16.37*/("""}"""),format.raw/*16.38*/("""
+    """),format.raw/*17.5*/("""</style>
 
     <body>
 
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
+            <h1>
                 Query 2.3 Map Search
             </h1>
 
         </header>
 
         <div>
-            <p class="focused" style="font-size: 20px;
-                color: #3F51B5">
-                """),_display_(/*44.18*/message),format.raw/*44.25*/("""
-            """),format.raw/*45.13*/("""</p>
+            <p>
+                """),_display_(/*30.18*/message),format.raw/*30.25*/("""
+            """),format.raw/*31.13*/("""</p>
 
         </div>
 
-        <form action = """"),_display_(/*49.26*/routes/*49.32*/.HomeController.q23Handler()),format.raw/*49.60*/("""" method="GET">
+        <form action = """"),_display_(/*35.26*/routes/*35.32*/.HomeController.q23Handler()),format.raw/*35.60*/("""" method="GET">
             <label>Conference</label>
             <input type = "text" maxlength="100" id="conference" name="conference">
             <label>Years</label>
             <input type = "text" maxlength="100" id="years" name="years">
-            <button id="api-get-page"  class="button" type="submit">2.3 Map Search</button>
+            <button id="api-get-page"  class="btn btn-primary" type="submit">2.3 Map Search</button>
         </form>
 
         <div id="mapid"></div>
         <script>
 
-                let icws = """),format.raw/*60.28*/("""{"""),format.raw/*60.29*/("""
-                    """),format.raw/*61.21*/("""LVx: 36.1699,//vegas 2003
+                let icws = """),format.raw/*46.28*/("""{"""),format.raw/*46.29*/("""
+                    """),format.raw/*47.21*/("""LVx: 36.1699,//vegas 2003
                     LVy: -115.1398,
                     SDx: 32.7157,//san diego 2004
                     SDy: -117.611,
@@ -121,20 +107,20 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
                     MIy: 9.1900,
                     //no duplicates for 2017 honolulu, 2018 san fran, 2020 beijing
                     //add them if you want but I couldn't store a key as a number
-                """),format.raw/*93.17*/("""}"""),format.raw/*93.18*/("""
+                """),format.raw/*79.17*/("""}"""),format.raw/*79.18*/("""
 
-                """),format.raw/*95.17*/("""let scc = """),format.raw/*95.27*/("""{"""),format.raw/*95.28*/("""
-                    """),format.raw/*96.21*/("""BIx: 12.9716,//bangalore india
+                """),format.raw/*81.17*/("""let scc = """),format.raw/*81.27*/("""{"""),format.raw/*81.28*/("""
+                    """),format.raw/*82.21*/("""BIx: 12.9716,//bangalore india
                     BIy: 77.5946,
                     //bangalore is only unique value (2009) in scc
                     //the rest of the values appear in icws with the same year
-                """),format.raw/*100.17*/("""}"""),format.raw/*100.18*/("""
+                """),format.raw/*86.17*/("""}"""),format.raw/*86.18*/("""
 
-                """),format.raw/*102.17*/("""var mymap = L.map('mapid').setView([0, 0], 2);
+                """),format.raw/*88.17*/("""var mymap = L.map('mapid').setView([0, 0], 2);
 
-                L.tileLayer('https://api.maptiler.com/maps/streets/"""),format.raw/*104.68*/("""{"""),format.raw/*104.69*/("""z"""),format.raw/*104.70*/("""}"""),format.raw/*104.71*/("""/"""),format.raw/*104.72*/("""{"""),format.raw/*104.73*/("""x"""),format.raw/*104.74*/("""}"""),format.raw/*104.75*/("""/"""),format.raw/*104.76*/("""{"""),format.raw/*104.77*/("""y"""),format.raw/*104.78*/("""}"""),format.raw/*104.79*/(""".png?key=dcj0rBj8ACT4YDvql2hH', """),format.raw/*104.111*/("""{"""),format.raw/*104.112*/("""
-                    """),format.raw/*105.21*/("""attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-                """),format.raw/*106.17*/("""}"""),format.raw/*106.18*/(""").addTo(mymap);
+                L.tileLayer('https://api.maptiler.com/maps/streets/"""),format.raw/*90.68*/("""{"""),format.raw/*90.69*/("""z"""),format.raw/*90.70*/("""}"""),format.raw/*90.71*/("""/"""),format.raw/*90.72*/("""{"""),format.raw/*90.73*/("""x"""),format.raw/*90.74*/("""}"""),format.raw/*90.75*/("""/"""),format.raw/*90.76*/("""{"""),format.raw/*90.77*/("""y"""),format.raw/*90.78*/("""}"""),format.raw/*90.79*/(""".png?key=dcj0rBj8ACT4YDvql2hH', """),format.raw/*90.111*/("""{"""),format.raw/*90.112*/("""
+                    """),format.raw/*91.21*/("""attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                """),format.raw/*92.17*/("""}"""),format.raw/*92.18*/(""").addTo(mymap);
 
                 //var marker = L.marker([51.5, -.09]).addTo(mymap); //londok UK test marker
                 var LV = L.marker([icws["LVx"], icws["LVy"]]).addTo(mymap);
@@ -173,11 +159,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-10-06T21:08:11.220
-                  SOURCE: /Users/abbygwin/CS_7340_Lab2/Frontend/app/views/q23.scala.html
-                  HASH: 76e98ff59d1934c6a8b552cd6116b996d1dbdf18
-                  MATRIX: 946->1|1057->19|1626->562|1655->563|1700->580|2088->940|2117->941|2159->955|2194->962|2223->963|2252->964|2295->979|2324->980|2356->985|2720->1322|2748->1329|2789->1342|2863->1389|2878->1395|2927->1423|3385->1853|3414->1854|3463->1875|5001->3385|5030->3386|5076->3404|5114->3414|5143->3415|5192->3436|5448->3663|5478->3664|5525->3682|5669->3797|5699->3798|5729->3799|5759->3800|5789->3801|5819->3802|5849->3803|5879->3804|5909->3805|5939->3806|5969->3807|5999->3808|6061->3840|6092->3841|6142->3862|6389->4080|6419->4081
-                  LINES: 28->1|33->2|46->15|46->15|47->16|57->26|57->26|59->28|59->28|59->28|59->28|59->28|59->28|60->29|75->44|75->44|76->45|80->49|80->49|80->49|91->60|91->60|92->61|124->93|124->93|126->95|126->95|126->95|127->96|131->100|131->100|133->102|135->104|135->104|135->104|135->104|135->104|135->104|135->104|135->104|135->104|135->104|135->104|135->104|135->104|135->104|136->105|137->106|137->106
+                  DATE: 2021-10-06T23:29:41.428
+                  SOURCE: /Users/adam/Desktop/Lab-2-Ebean/Frontend/app/views/q23.scala.html
+                  HASH: 57563717f458e559e7898a97548f594a430f1892
+                  MATRIX: 946->1|1057->19|1626->562|1655->563|1684->564|1727->579|1756->580|1788->585|2008->778|2036->785|2077->798|2151->845|2166->851|2215->879|2682->1318|2711->1319|2760->1340|4298->2850|4327->2851|4373->2869|4411->2879|4440->2880|4489->2901|4744->3128|4773->3129|4819->3147|4962->3262|4991->3263|5020->3264|5049->3265|5078->3266|5107->3267|5136->3268|5165->3269|5194->3270|5223->3271|5252->3272|5281->3273|5342->3305|5372->3306|5421->3327|5667->3545|5696->3546
+                  LINES: 28->1|33->2|47->16|47->16|47->16|47->16|47->16|48->17|61->30|61->30|62->31|66->35|66->35|66->35|77->46|77->46|78->47|110->79|110->79|112->81|112->81|112->81|113->82|117->86|117->86|119->88|121->90|121->90|121->90|121->90|121->90|121->90|121->90|121->90|121->90|121->90|121->90|121->90|121->90|121->90|122->91|123->92|123->92
                   -- GENERATED --
               */
           

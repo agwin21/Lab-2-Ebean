@@ -1,7 +1,7 @@
 [debug] Copy resource mappings: 
-[debug] 	(/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/conf/logback.xml,/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/target/scala-2.11/classes/logback.xml)
-[debug] 	(/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/conf/application.conf,/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/target/scala-2.11/classes/application.conf)
-[debug] 	(/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/conf/evolutions,/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/target/scala-2.11/classes/evolutions)
-[debug] 	(/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/conf/routes,/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/target/scala-2.11/classes/routes)
-[debug] 	(/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/conf/evolutions/default,/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/target/scala-2.11/classes/evolutions/default)
-[debug] 	(/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/conf/evolutions/default/1.sql,/Users/andrewbrkich/Desktop/CS_7340_Lab2/ebean-backend/target/scala-2.11/classes/evolutions/default/1.sql)
+[debug] 	(/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/conf/logback.xml,/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/target/scala-2.11/classes/logback.xml)
+[debug] 	(/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/conf/application.conf,/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/target/scala-2.11/classes/application.conf)
+[debug] 	(/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/conf/evolutions,/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/target/scala-2.11/classes/evolutions)
+[debug] 	(/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/conf/routes,/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/target/scala-2.11/classes/routes)
+[debug] 	(/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/conf/evolutions/default,/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/target/scala-2.11/classes/evolutions/default)
+[debug] 	(/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/conf/evolutions/default/1.sql,/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/target/scala-2.11/classes/evolutions/default/1.sql)

@@ -32,46 +32,28 @@ object q21 extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFo
 
 Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
-
-    <style>
-            .button """),format.raw/*6.21*/("""{"""),format.raw/*6.22*/("""
-                """),format.raw/*7.17*/("""background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            """),format.raw/*17.13*/("""}"""),format.raw/*17.14*/("""
-    """),format.raw/*18.5*/("""</style>
-
     <body>
 
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
+            <h1>
                 Query 2.1 Metadata Search
             </h1>
 
         </header>
 
         <div>
-            <p class="focused" style="font-size: 20px;
-                color: #3F51B5">
-                """),_display_(/*33.18*/message),format.raw/*33.25*/("""
-            """),format.raw/*34.13*/("""</p>
+            <p>
+                """),_display_(/*15.18*/message),format.raw/*15.25*/("""
+            """),format.raw/*16.13*/("""</p>
 
         </div>
 
-        <form action = """"),_display_(/*38.26*/routes/*38.32*/.HomeController.q21Handler()),format.raw/*38.60*/("""" method="GET">
+        <form action = """"),_display_(/*20.26*/routes/*20.32*/.HomeController.q21Handler()),format.raw/*20.60*/("""" method="GET">
             <label>Name</label>
             <input type = "text" maxlength="100" id="name" name="name">
             <label>Year</label>
             <input type = "text" maxlength="100" id="year" name="year">
-            <button id="api-get-page"  class="button" type="submit">2.1 Metadata Search</button>
+            <button id="api-get-page"  class="btn btn-primary" type="submit">2.1 Metadata Search</button>
         </form>
     </body>
 </html>"""))
@@ -90,11 +72,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-10-06T21:08:11.255
-                  SOURCE: /Users/abbygwin/CS_7340_Lab2/Frontend/app/views/q21.scala.html
-                  HASH: e51f6663c695f81fc6b85350e499f5bec01cc556
-                  MATRIX: 946->1|1057->19|1140->75|1168->76|1212->93|1600->453|1629->454|1661->459|2030->801|2058->808|2099->821|2173->868|2188->874|2237->902
-                  LINES: 28->1|33->2|37->6|37->6|38->7|48->17|48->17|49->18|64->33|64->33|65->34|69->38|69->38|69->38
+                  DATE: 2021-10-06T23:29:41.441
+                  SOURCE: /Users/adam/Desktop/Lab-2-Ebean/Frontend/app/views/q21.scala.html
+                  HASH: afdc8194b1fbc06217d0d6e8dc19decba1d708ed
+                  MATRIX: 946->1|1057->19|1295->230|1323->237|1364->250|1438->297|1453->303|1502->331
+                  LINES: 28->1|33->2|46->15|46->15|47->16|51->20|51->20|51->20
                   -- GENERATED --
               */
           

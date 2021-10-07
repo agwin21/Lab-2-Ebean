@@ -32,42 +32,24 @@ object q14 extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFo
 
 Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
-
-    <style>
-            .button """),format.raw/*6.21*/("""{"""),format.raw/*6.22*/("""
-                """),format.raw/*7.17*/("""background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            """),format.raw/*17.13*/("""}"""),format.raw/*17.14*/("""
-    """),format.raw/*18.5*/("""</style>
-
     <body>
 
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
+            <h1>
                 Query 1.4 Authors Search
             </h1>
 
         </header>
 
         <div>
-            <p class="focused" style="font-size: 20px;
-                color: #3F51B5">
-                """),_display_(/*33.18*/message),format.raw/*33.25*/("""
-            """),format.raw/*34.13*/("""</p>
+            <p>
+                """),_display_(/*15.18*/message),format.raw/*15.25*/("""
+            """),format.raw/*16.13*/("""</p>
 
         </div>
 
-        <form action = """"),_display_(/*38.26*/routes/*38.32*/.HomeController.q14Handler()),format.raw/*38.60*/("""" method="GET">
-            <button id="api-get-page"  class="button" type="submit">1.4 Authors Search</button>
+        <form action = """"),_display_(/*20.26*/routes/*20.32*/.HomeController.q14Handler()),format.raw/*20.60*/("""" method="GET">
+            <button id="api-get-page"  class="btn btn-primary" type="submit">1.4 Authors Search</button>
         </form>
     </body>
 </html>"""))
@@ -86,11 +68,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-10-06T21:08:11.227
-                  SOURCE: /Users/abbygwin/CS_7340_Lab2/Frontend/app/views/q14.scala.html
-                  HASH: 57e001e51cc07363f09eeadb8e8d7989001a06a5
-                  MATRIX: 946->1|1057->19|1140->75|1168->76|1212->93|1600->453|1629->454|1661->459|2029->800|2057->807|2098->820|2172->867|2187->873|2236->901
-                  LINES: 28->1|33->2|37->6|37->6|38->7|48->17|48->17|49->18|64->33|64->33|65->34|69->38|69->38|69->38
+                  DATE: 2021-10-06T23:23:52.363
+                  SOURCE: /Users/adam/Desktop/Lab-2-Ebean/Frontend/app/views/q14.scala.html
+                  HASH: e96ca05a5fd05997ff5d47ac8d858561838301dc
+                  MATRIX: 946->1|1057->19|1294->229|1322->236|1363->249|1437->296|1452->302|1501->330
+                  LINES: 28->1|33->2|46->15|46->15|47->16|51->20|51->20|51->20
                   -- GENERATED --
               */
           

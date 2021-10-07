@@ -2,12 +2,12 @@ html {
     background: #eee;
 }
 
-header h1 {
-    padding: 0.4em 1.1em;
-    color: #008ae6;
-    font-weight: normal;
-    font-size: 24px;
-}
+/*header h1 {*/
+/*    padding: 0.4em 1.1em;*/
+/*    color: #008ae6;*/
+/*    font-weight: normal;*/
+/*    font-size: 24px;*/
+/*}*/
 
 section#main {
     position: relative;

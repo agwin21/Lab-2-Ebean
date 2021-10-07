@@ -32,42 +32,24 @@ object q22 extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFo
 
 Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
-
-    <style>
-            .button """),format.raw/*6.21*/("""{"""),format.raw/*6.22*/("""
-                """),format.raw/*7.17*/("""background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-            """),format.raw/*17.13*/("""}"""),format.raw/*17.14*/("""
-    """),format.raw/*18.5*/("""</style>
-
     <body>
 
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
+            <h1>
                 Query 2.2 Productive Authors Search
             </h1>
 
         </header>
 
         <div>
-            <p class="focused" style="font-size: 20px;
-                color: #3F51B5">
-                """),_display_(/*33.18*/message),format.raw/*33.25*/("""
-            """),format.raw/*34.13*/("""</p>
+            <p>
+                """),_display_(/*15.18*/message),format.raw/*15.25*/("""
+            """),format.raw/*16.13*/("""</p>
 
         </div>
 
-        <form action = """"),_display_(/*38.26*/routes/*38.32*/.HomeController.q22Handler()),format.raw/*38.60*/("""" method="GET">
-            <button id="api-get-page"  class="button" type="submit">2.2 Productive Authors Search</button>
+        <form action = """"),_display_(/*20.26*/routes/*20.32*/.HomeController.q22Handler()),format.raw/*20.60*/("""" method="GET">
+            <button id="api-get-page"  class="btn btn-primary" type="submit">2.2 Productive Authors Search</button>
         </form>
     </body>
 </html>"""))
@@ -86,11 +68,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-10-06T21:08:11.170
-                  SOURCE: /Users/abbygwin/CS_7340_Lab2/Frontend/app/views/q22.scala.html
-                  HASH: ac0854d8a37bc4c7d405f0176dee8d049739a675
-                  MATRIX: 946->1|1057->19|1140->75|1168->76|1212->93|1600->453|1629->454|1661->459|2040->811|2068->818|2109->831|2183->878|2198->884|2247->912
-                  LINES: 28->1|33->2|37->6|37->6|38->7|48->17|48->17|49->18|64->33|64->33|65->34|69->38|69->38|69->38
+                  DATE: 2021-10-06T23:29:41.395
+                  SOURCE: /Users/adam/Desktop/Lab-2-Ebean/Frontend/app/views/q22.scala.html
+                  HASH: 36dd79b81ab5f00d60347cd38bf2f18307461206
+                  MATRIX: 946->1|1057->19|1305->240|1333->247|1374->260|1448->307|1463->313|1512->341
+                  LINES: 28->1|33->2|46->15|46->15|47->16|51->20|51->20|51->20
                   -- GENERATED --
               */
           
