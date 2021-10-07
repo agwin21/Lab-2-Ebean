@@ -32,6 +32,8 @@ object login extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
+
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -49,44 +51,49 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
     <body>
 
         <header class="topbar">
-            <h1 class="focused" style="font-size: 37px;
-                color: #57a957">
-                <strong>Play Setup Demo</strong>
+            <h1>
+                <strong>Part 1</strong>
             </h1>
         </header>
 
 
-        <div class="row">
-            <div class="card col s4 offset-s4 ">
-                <div class="card-panel">
-                    <form action=""""),_display_(/*31.36*/routes/*31.42*/.HomeController.loginHandler()),format.raw/*31.72*/("""" method="GET">
+        <div class="container">
+            <div class="row">
+            <div class="col-2">
+                <form action = """"),_display_(/*32.34*/routes/*32.40*/.HomeController.query11()),format.raw/*32.65*/("""" method="GET">
+                    <button id="api-get-page"  class="btn btn-primary" type="submit">1.1 Paper Search</button>
+                </form>
 
-                        <div class="row">
-                            <div class="input-field col s12">
+            </div>
+            </div>
 
-                                <input id="username" name="username" type="text" class="validate">
-                                <label for="username">Username</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-
-                                <input id="password" name="password" type="password" class="validate">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
-                        """),_display_(/*47.26*/if(authorizeMessage!= null)/*47.53*/{_display_(Seq[Any](format.raw/*47.54*/("""
-                            """),format.raw/*48.29*/("""<div class="alert alert-primary" role="alert">
-                            """),_display_(/*49.30*/authorizeMessage),format.raw/*49.46*/("""
-                            """),format.raw/*50.29*/("""</div>
-                            <br>
-                        """)))}),format.raw/*52.26*/("""
-                        """),format.raw/*53.25*/("""<div class="row">
-                            <button id="api-search-button" class="btn col s4 offset-s4" type="submit">Submit</button>
-                        </div>
-                        <a href=""""),_display_(/*56.35*/routes/*56.41*/.HomeController.signup()),format.raw/*56.65*/("""">REGISTER</a>
-                    </form>
-                </div>
+            <div class="row">
+            <div class="col-2">
+                <form action = """"),_display_(/*41.34*/routes/*41.40*/.HomeController.query12()),format.raw/*41.65*/("""" method="GET">
+                    <button id="api-get-page" class="btn btn-primary" type="submit">1.2 Journal Search</button>
+                </form>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-2">
+                <form action = """"),_display_(/*48.34*/routes/*48.40*/.HomeController.query13()),format.raw/*48.65*/("""" method="GET">
+                    <button id="api-get-page" class="btn btn-primary" type="submit">1.3 Author Title Search</button>
+                </form>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-2">
+                <form action = """"),_display_(/*55.34*/routes/*55.40*/.HomeController.query14()),format.raw/*55.65*/("""" method="GET">
+                    <button id="api-get-page" class="btn btn-primary" type="submit">1.4 Authors With 10+ Papers</button>
+                </form>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-2">
+                <form action = """"),_display_(/*62.34*/routes/*62.40*/.HomeController.query15()),format.raw/*62.65*/("""" method="GET">
+                    <button id="api-get-page" class="btn btn-primary" type="submit">1.5 Conference Location Search</button>
+                </form>
+            </div>
             </div>
         </div>
     </body>
@@ -107,11 +114,11 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
 
               /*
                   -- GENERATED --
-                  DATE: 2021-09-24T11:30:27.801
-                  SOURCE: /Users/abbygwin/Downloads/Lab-2-Ebean/Frontend/app/views/login.scala.html
-                  HASH: 35dca9e6949486fa9ac000f0cb94ff87b88db485
-                  MATRIX: 948->1|1068->28|2656->1591|2671->1597|2722->1627|3477->2355|3513->2382|3552->2383|3609->2412|3712->2488|3749->2504|3806->2533|3902->2598|3955->2623|4183->2824|4198->2830|4243->2854
-                  LINES: 28->1|33->2|62->31|62->31|62->31|78->47|78->47|78->47|79->48|80->49|80->49|81->50|83->52|84->53|87->56|87->56|87->56
+                  DATE: 2021-10-06T23:24:52.431
+                  SOURCE: /Users/adam/Desktop/Lab-2-Ebean/Frontend/app/views/login.scala.html
+                  HASH: 084e607bd7e6272f89b0a96f3f616b7f0473fbbe
+                  MATRIX: 948->1|1068->28|2553->1488|2568->1494|2614->1519|2927->1805|2942->1811|2988->1836|3300->2121|3315->2127|3361->2152|3678->2442|3693->2448|3739->2473|4060->2767|4075->2773|4121->2798
+                  LINES: 28->1|33->2|63->32|63->32|63->32|72->41|72->41|72->41|79->48|79->48|79->48|86->55|86->55|86->55|93->62|93->62|93->62
                   -- GENERATED --
               */
           

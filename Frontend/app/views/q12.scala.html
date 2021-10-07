@@ -1,0 +1,31 @@
+@(message: String)
+<!DOCTYPE html>
+<html>
+
+    <body>
+
+        <header class="topbar">
+            <h1>
+                Query 1.2 Journal Search
+            </h1>
+
+        </header>
+
+        <div>
+            <p>
+                @message
+            </p>
+
+        </div>
+
+        <form action = "@routes.HomeController.q12Handler()" method="GET">
+            <label>Journal name</label>
+            <input type = "text" maxlength="100" id="title" name="title">
+            <label>Year</label>
+            <input type = "text" maxlength="100" id="year" name="year">
+            <label>Journal issue</label>
+            <input type = "text" maxlength="100" id="issue" name="issue">
+            <button id="api-get-page" class="btn btn-primary" type="submit">1.2 Journal Search</button>
+        </form>
+    </body>
+</html>

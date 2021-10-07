@@ -1,0 +1,24 @@
+@(message: String)
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <header class="topbar">
+            <h1>
+                Query 1.4 Authors Search
+            </h1>
+
+        </header>
+
+        <div>
+            <p>
+                @message
+            </p>
+
+        </div>
+
+        <form action = "@routes.HomeController.q14Handler()" method="GET">
+            <button id="api-get-page"  class="btn btn-primary" type="submit">1.4 Authors Search</button>
+        </form>
+    </body>
+</html>

@@ -1,14 +1,19 @@
 package controllers;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.data.Form;
 import play.data.FormFactory;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.libs.concurrent.HttpExecutionContext;
 import play.libs.ws.WSResponse;
+import play.twirl.api.Html;
 import views.html.*;
 
 import javax.inject.Inject;
+import java.util.Iterator;
 import java.util.concurrent.CompletionStage;
 
 /**
@@ -20,6 +25,7 @@ public class HomeController extends Controller {
     HttpExecutionContext ec;
 
     private FormFactory formFactory;
+    private Iterator it;
 
     @Inject
     public HomeController(FormFactory formFactory) {
@@ -33,53 +39,75 @@ public class HomeController extends Controller {
         return ok(views.html.login.render(""));
     }
 
-    /**
-     * Index page
-     */
-    public Result signup() {
-        return ok(views.html.register.render(null));
-    }
 
-    public CompletionStage<Result> loginHandler() {
-
-        Form<User> loginForm = formFactory.form(User.class).bindFromRequest();
-        if (loginForm.hasErrors()){
-            return (CompletionStage<Result>) badRequest(views.html.login.render(""));  // send parameter like register so that user could know
+    public Result query11(){return ok(views.html.q11.render(""));}
+    public CompletionStage<Result> q11Handler(){
+        Form<Paper> q11Form = formFactory.form(Paper.class).bindFromRequest();
+        if (q11Form.get().getTitle() == null){
+            return (CompletionStage<Result>) ok(q11.render("query 1.1 test"));
         }
+        return q11Form.get().checkPaper().thenApplyAsync((WSResponse r)->{
 
-        return loginForm.get().checkAuthorized()
-                .thenApplyAsync((WSResponse r) -> {
-                    if (r.getStatus() == 200 && r.asJson() != null && r.asJson().asBoolean()) {
-                        System.out.println(r.asJson());
-                        // add username to session
-                        session("username",loginForm.get().getUsername());   // store username in session for your project
-                        // redirect to index page, to display all categories
-                        return ok(views.html.index.render("Welcome!!! " + loginForm.get().getUsername()));
-                    } else {
-                        System.out.println("response null");
-                        String authorizeMessage = "Incorrect Username or Password ";
-                        return badRequest(views.html.login.render(authorizeMessage));
+                if (r.getStatus() == 200 && r.asJson() != null) {
+
+                    String outString = "";
+
+                    JsonNode response = r.asJson();
+
+                    Iterator it = response.fieldNames();
+                    System.out.println(response.fields());
+
+                    while(it.hasNext()){
+                        String key = it.next().toString();
+                        JsonNode value = response.get(key);
+                        System.out.println(value.toString());
+                        if(value.toString() != "null"){
+                            outString += key +":\t" + value + "\n";
+                        }
                     }
-                }, ec.current());
+
+
+                    return ok(views.html.q11.render(outString));
+                }
+                else{
+                    return ok(views.html.q11.render("There's No Paper With That Name"));
+                }
+
+        });
+
     }
 
-    public CompletionStage<Result> signupHandler() {
-
-        Form<User> registrationForm = formFactory.form(User.class).bindFromRequest();
-        if (registrationForm.hasErrors()){
-            return (CompletionStage<Result>) badRequest(views.html.register.render(null));
-        }
-        return registrationForm.get().registerUser()
-                .thenApplyAsync((WSResponse r) -> {
-                    if (r.getStatus() == 200 && r.asJson() != null) {
-                        System.out.println("success");
-                        System.out.println(r.asJson());
-                        return ok(login.render(""));
-                    } else {
-                        System.out.println("response null");
-                        return badRequest(views.html.register.render("Username already exists"));
-                    }
-                }, ec.current());
-
+    public Result query12(){return ok(views.html.q12.render(""));}
+    public Result q12Handler(){
+        return ok(views.html.q12.render("Query 1.2"));
     }
+
+    public Result query13(){return ok(views.html.q13.render(""));}
+    public Result q13Handler(){ return ok(views.html.q13.render("Query 1.3")); }
+
+    public Result query14(){return ok(views.html.q14.render(""));}
+    public Result q14Handler(){
+        return ok(views.html.q14.render("Query 1.4"));
+    }
+
+    public Result query15(){return ok(views.html.q15.render(""));}
+    public Result q15Handler(){
+        return ok(views.html.q15.render("Query 1.5"));
+    }
+
+//    public Result query21(){return ok(views.html.q21.render(""));}
+//    public Result q21Handler(){
+//        return ok(views.html.q21.render("Query 2.1"));
+//    }
+//
+//    public Result query22(){return ok(views.html.q22.render(""));}
+//    public Result q22Handler(){
+//        return ok(views.html.q22.render("Query 2.2"));
+//    }
+//
+//    public Result query23(){return ok(views.html.q23.render(""));}
+//    public Result q23Handler(){
+//        return ok(views.html.q23.render("Query 2.3"));
+//    }
+
 }

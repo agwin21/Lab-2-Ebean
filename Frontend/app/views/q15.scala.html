@@ -1,0 +1,28 @@
+@(message: String)
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <header class="topbar">
+            <h1>
+                Query 1.5 Conference Search
+            </h1>
+
+        </header>
+
+        <div>
+            <p>
+                @message
+            </p>
+
+        </div>
+
+        <form action = "@routes.HomeController.q15Handler()" method="GET">
+            <label>Conference</label>
+            <input type = "text" maxlength="100" id="conference" name="conference">
+            <label>Year</label>
+            <input type = "text" maxlength="100" id="year" name="year">
+            <button id="api-get-page"  class="btn btn-primary" type="submit">1.5 Conference Search</button>
+        </form>
+    </body>
+</html>
