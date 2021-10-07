@@ -44,7 +44,7 @@ public class HomeController extends Controller {
     public CompletionStage<Result> q11Handler(){
         Form<Paper> q11Form = formFactory.form(Paper.class).bindFromRequest();
         if (q11Form.get().getTitle() == null){
-            return (CompletionStage<Result>) ok(q11.render("Test Message for q11"));
+            return (CompletionStage<Result>) ok(q11.render("Test for query 1.1"));
         }
         return q11Form.get().checkPaper().thenApplyAsync((WSResponse r)->{
 
@@ -70,7 +70,7 @@ public class HomeController extends Controller {
                     return ok(views.html.q11.render(outString));
                 }
                 else{
-                    return ok(views.html.q11.render("No Title By That name"));
+                    return ok(views.html.q11.render("No papers by that title could be found"));
                 }
 
         });
@@ -79,37 +79,23 @@ public class HomeController extends Controller {
 
     public Result query12(){return ok(views.html.q12.render(""));}
     public Result q12Handler(){
-        return ok(views.html.q12.render("testing 123"));
+        return ok(views.html.q12.render("test test test"));
     }
 
     public Result query13(){return ok(views.html.q13.render(""));}
     public Result q13Handler(){
-        return ok(views.html.q13.render("testing 123"));
+        return ok(views.html.q13.render("test test test"));
     }
 
     public Result query14(){return ok(views.html.q14.render(""));}
     public Result q14Handler(){
-        return ok(views.html.q14.render("testing 123"));
+        return ok(views.html.q14.render("testing test test"));
     }
 
     public Result query15(){return ok(views.html.q15.render(""));}
     public Result q15Handler(){
-        return ok(views.html.q15.render("testing 123"));
+        return ok(views.html.q15.render("test test test"));
     }
 
-    public Result query21(){return ok(views.html.q21.render(""));}
-    public Result q21Handler(){
-        return ok(views.html.q21.render("testing 123"));
-    }
-
-    public Result query22(){return ok(views.html.q22.render(""));}
-    public Result q22Handler(){
-        return ok(views.html.q22.render("testing 123"));
-    }
-
-    public Result query23(){return ok(views.html.q23.render(""));}
-    public Result q23Handler(){
-        return ok(views.html.q23.render("testing 123"));
-    }
 
 }

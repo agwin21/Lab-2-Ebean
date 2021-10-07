@@ -127,27 +127,6 @@ Seq[Any](format.raw/*2.1*/("""<!DOCTYPE html>
             </h1>
         </header>
 
-
-        <div class="grid-container">
-            <div class="grid-item">
-                <form action = """"),_display_(/*102.34*/routes/*102.40*/.HomeController.query21()),format.raw/*102.65*/("""" method="GET">
-                    <button id="api-get-page" class="button" type="submit">2.1 Author Paper Search</button>
-                </form>
-            </div>
-
-            <div class="grid-item">
-                <form action = """"),_display_(/*108.34*/routes/*108.40*/.HomeController.query22()),format.raw/*108.65*/("""" method="GET">
-                    <button id="api-get-page" class="button" type="submit">2.2 Productive Authors Co-Authors</button>
-                </form>
-            </div>
-            <div class="grid-item">
-                <form action = """"),_display_(/*113.34*/routes/*113.40*/.HomeController.query23()),format.raw/*113.65*/("""" method="GET">
-                    <button id="api-get-page" class="button" type="submit">2.3 Map of Conference Locations</button>
-                </form>
-            </div>
-        </div>
-    </body>
-</html>
 """))
       }
     }
