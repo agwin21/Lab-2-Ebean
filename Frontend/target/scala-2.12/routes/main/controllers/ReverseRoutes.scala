@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/adam/Desktop/Lab-2-Ebean/Frontend/conf/routes
-// @DATE:Thu Oct 07 11:25:42 CDT 2021
+// @SOURCE:/Users/abbygwin/Lab-2-Ebean/Frontend/conf/routes
+// @DATE:Thu Oct 07 13:23:21 CDT 2021
 
 import play.api.mvc.Call
 
