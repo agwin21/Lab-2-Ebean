@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/adam/Desktop/Lab-2-Ebean/Frontend/conf/routes
-// @DATE:Wed Oct 06 21:50:00 CDT 2021
+// @DATE:Thu Oct 07 11:25:42 CDT 2021
 
 import play.api.mvc.Call
 
@@ -18,34 +18,16 @@ package controllers {
     }
 
   
-    // @LINE:22
-    def q23Handler(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query23Handler")
-    }
-  
     // @LINE:15
     def query14(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "query14")
     }
   
-    // @LINE:20
-    def q22Handler(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query22Handler")
-    }
-  
     // @LINE:16
     def q15Handler(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "query15Handler")
-    }
-  
-    // @LINE:18
-    def q21Handler(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query21Handler")
     }
   
     // @LINE:14
@@ -90,28 +72,10 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "query12Handler")
     }
   
-    // @LINE:23
-    def query23(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query23")
-    }
-  
-    // @LINE:19
-    def query21(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query21")
-    }
-  
     // @LINE:7
     def index(): Call = {
       
       Call("GET", _prefix)
-    }
-  
-    // @LINE:21
-    def query22(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "query22")
     }
   
     // @LINE:12

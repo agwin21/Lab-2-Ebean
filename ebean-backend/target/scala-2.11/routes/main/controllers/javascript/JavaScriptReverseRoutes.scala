@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/adam/Downloads/CS_7340_Lab2-main/ebean-backend/conf/routes
-// @DATE:Wed Oct 06 21:22:22 CDT 2021
+// @SOURCE:/Users/adam/Desktop/Lab-2-Ebean/ebean-backend/conf/routes
+// @DATE:Thu Oct 07 11:18:25 CDT 2021
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }

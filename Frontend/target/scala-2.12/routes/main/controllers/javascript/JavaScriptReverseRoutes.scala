@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/adam/Desktop/Lab-2-Ebean/Frontend/conf/routes
-// @DATE:Wed Oct 06 21:50:00 CDT 2021
+// @DATE:Thu Oct 07 11:25:42 CDT 2021
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -19,16 +19,6 @@ package controllers.javascript {
     }
 
   
-    // @LINE:22
-    def q23Handler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.q23Handler",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query23Handler"})
-        }
-      """
-    )
-  
     // @LINE:15
     def query14: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.query14",
@@ -39,32 +29,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:20
-    def q22Handler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.q22Handler",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query22Handler"})
-        }
-      """
-    )
-  
     // @LINE:16
     def q15Handler: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.q15Handler",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query15Handler"})
-        }
-      """
-    )
-  
-    // @LINE:18
-    def q21Handler: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.q21Handler",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query21Handler"})
         }
       """
     )
@@ -139,42 +109,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:23
-    def query23: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.query23",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query23"})
-        }
-      """
-    )
-  
-    // @LINE:19
-    def query21: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.query21",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query21"})
-        }
-      """
-    )
-  
     // @LINE:7
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
-        }
-      """
-    )
-  
-    // @LINE:21
-    def query22: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.query22",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "query22"})
         }
       """
     )

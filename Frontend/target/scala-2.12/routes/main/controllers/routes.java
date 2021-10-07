@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/adam/Desktop/Lab-2-Ebean/Frontend/conf/routes
-// @DATE:Wed Oct 06 21:50:00 CDT 2021
+// @DATE:Thu Oct 07 11:25:42 CDT 2021
 
 package controllers;
 

@@ -95,19 +95,19 @@ public class HomeController extends Controller {
         return ok(views.html.q15.render("Query 1.5"));
     }
 
-    public Result query21(){return ok(views.html.q21.render(""));}
-    public Result q21Handler(){
-        return ok(views.html.q21.render("Query 2.1"));
-    }
-
-    public Result query22(){return ok(views.html.q22.render(""));}
-    public Result q22Handler(){
-        return ok(views.html.q22.render("Query 2.2"));
-    }
-
-    public Result query23(){return ok(views.html.q23.render(""));}
-    public Result q23Handler(){
-        return ok(views.html.q23.render("Query 2.3"));
-    }
+//    public Result query21(){return ok(views.html.q21.render(""));}
+//    public Result q21Handler(){
+//        return ok(views.html.q21.render("Query 2.1"));
+//    }
+//
+//    public Result query22(){return ok(views.html.q22.render(""));}
+//    public Result q22Handler(){
+//        return ok(views.html.q22.render("Query 2.2"));
+//    }
+//
+//    public Result query23(){return ok(views.html.q23.render(""));}
+//    public Result q23Handler(){
+//        return ok(views.html.q23.render("Query 2.3"));
+//    }
 
 }
